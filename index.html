@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Маэстро — музыкальный магазин в Будённовске</title>
+<meta name="description" content="Единственный полноценный музыкальный магазин Будённовска. Гитары, клавишные, барабаны и звук — с настройкой, ремонтом и живой консультацией. Ленинская, 86.">
+<meta name="theme-color" content="#000000">
+
+<!-- Пока это макет на служебном адресе — в поиск не пускаем,
+     чтобы он не путался с настоящим магазином в выдаче.
+     После согласования с владельцем строку robots убрать. -->
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Маэстро">
+<meta property="og:title" content="Маэстро — музыкальный магазин в Будённовске">
+<meta property="og:description" content="Гитары, клавишные, барабаны и звук. Настройка и ремонт на месте. Ленинская, 86.">
+<meta property="og:url" content="https://andrlizin790-cyber.github.io/maestro/">
+<meta property="og:image" content="https://andrlizin790-cyber.github.io/maestro/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Бас-гитара в темноте и знак камертона">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/guitar.webp" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============================ ШАПКА ============================ -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+
+    <a class="logo enter d1" href="#top" aria-label="Маэстро — на главную">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+          <path class="logo__fork" d="M8.5 3.2 V11.4 a3.5 3.5 0 0 0 7 0 V3.2"></path>
+          <path class="logo__stem" d="M12 14.9 V20.8"></path>
+          <path class="logo__wave logo__wave--l" d="M4.6 7.4 a5.4 5.4 0 0 0 0 7.4"></path>
+          <path class="logo__wave logo__wave--r" d="M19.4 7.4 a5.4 5.4 0 0 1 0 7.4"></path>
+        </svg>
+      </span>
+      <span class="logo__word">Маэстро</span>
+    </a>
+
+    <nav class="nav__links enter d2" aria-label="Основная навигация">
+      <a href="#catalog"><span class="roll"><span class="roll__a">Каталог</span><span class="roll__b" aria-hidden="true">Каталог</span></span></a>
+      <a href="#why"><span class="roll"><span class="roll__a">Почему мы</span><span class="roll__b" aria-hidden="true">Почему мы</span></span></a>
+      <a href="#reviews"><span class="roll"><span class="roll__a">Отзывы</span><span class="roll__b" aria-hidden="true">Отзывы</span></span></a>
+      <a href="#contact"><span class="roll"><span class="roll__a">Контакты</span><span class="roll__b" aria-hidden="true">Контакты</span></span></a>
+    </nav>
+
+    <div class="nav__act enter d2">
+      <a class="btn btn--ghost btn--sm" href="https://wa.me/79197324262" target="_blank" rel="noopener">
+        <span class="btn__fill" aria-hidden="true"></span>
+        <span class="btn__label">Написать в&nbsp;WhatsApp</span>
+      </a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="menu" id="menu">
+    <nav class="menu__links" aria-label="Меню">
+      <a href="#catalog">Каталог</a>
+      <a href="#why">Почему мы</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a class="btn btn--solid" href="https://wa.me/79197324262" target="_blank" rel="noopener">
+      <span class="btn__fill" aria-hidden="true"></span>
+      <span class="btn__label">Подобрать инструмент</span>
+    </a>
+  </div>
+</header>
+
+<!-- ===================== HERO — схема B ===================== -->
+<section class="hero" id="top">
+  <div class="hero__stage" data-stage>
+
+    <div class="stage__glow" aria-hidden="true" data-glow></div>
+    <div class="stage__pool" aria-hidden="true" data-pool></div>
+    <div class="stage__dust" aria-hidden="true" data-dust></div>
+
+    <h1 class="h1">
+      <span class="word word--top" data-word="top">
+        <span class="word__in grad enter d4">Первая струна</span>
+      </span>
+
+      <span class="word word--bot" data-word="bot">
+        <span class="word__in grad enter d6">большая сцена</span>
+      </span>
+    </h1>
+
+    <div class="stage__object" data-object>
+      <span class="stage__object-in enter d5">
+        <span class="obj" data-obj>
+          <picture>
+            <source srcset="assets/guitar.webp" type="image/webp">
+            <img class="obj__base" src="assets/guitar.jpg" alt="Бас-гитара крупным планом: гриф, звукосниматели и панель регуляторов" width="1150" height="2346" fetchpriority="high">
+          </picture>
+          <picture>
+            <source srcset="assets/guitar.webp" type="image/webp">
+            <img class="obj__edge" src="assets/guitar.jpg" alt="" aria-hidden="true" width="1150" height="2346">
+          </picture>
+          <picture>
+            <source srcset="assets/guitar.webp" type="image/webp">
+            <img class="obj__lit" src="assets/guitar.jpg" alt="" aria-hidden="true" width="1150" height="2346" data-lit>
+          </picture>
+
+          <span class="hot hot--tuners" data-hot>
+            <span class="hot__dot"></span>
+            <span class="hot__label">Колки и&nbsp;гриф</span>
+          </span>
+          <span class="hot hot--pickups" data-hot>
+            <span class="hot__dot"></span>
+            <span class="hot__label">Звукосниматели</span>
+          </span>
+          <span class="hot hot--knobs" data-hot>
+            <span class="hot__dot"></span>
+            <span class="hot__label">Громкость и&nbsp;тон</span>
+          </span>
+        </span>
+      </span>
+    </div>
+
+    <div class="panel" data-panel>
+      <div class="panel__in enter d7">
+        <p class="lede">Единственный полноценный музыкальный магазин Будённовска.<br>
+          Гитары, клавишные, барабаны и&nbsp;звук — с&nbsp;настройкой и&nbsp;ремонтом.</p>
+
+        <div class="acts">
+          <a class="btn btn--solid" href="https://wa.me/79197324262" target="_blank" rel="noopener" data-magnet>
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span class="btn__label">Подобрать инструмент</span>
+          </a>
+          <a class="btn btn--ghost" href="#catalog">
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span class="btn__label">Смотреть каталог</span>
+          </a>
+        </div>
+
+        <p class="reassure">Ответим лично за&nbsp;15&nbsp;минут</p>
+      </div>
+    </div>
+
+    <p class="stage__cue enter d8" data-cue>Наведите на&nbsp;инструмент</p>
+
+    <div class="scroll-hint enter d8" aria-hidden="true" data-hint>
+      <span class="scroll-hint__line"></span>
+      <span class="scroll-hint__txt">Листайте</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== КАТАЛОГ ===================== -->
+<section class="sec sec--catalog" id="catalog">
+  <div class="wrap">
+
+    <div class="sec__head reveal">
+      <p class="label">Каталог</p>
+      <h2 class="h2 grad">Что стоит<br>на&nbsp;полках</h2>
+      <p class="sec__note">Витрина небольшая, склад — нет. Чего не&nbsp;видите, привезём под&nbsp;заказ.</p>
+    </div>
+
+    <ul class="rows" data-rows>
+      <li class="row reveal">
+        <a class="row__in" href="https://wa.me/79197324262" target="_blank" rel="noopener">
+          <span class="row__no">01</span>
+          <span class="row__name">Гитары</span>
+          <span class="row__desc">Акустика, электро, бас, классика. Струны, чехлы, комбики.</span>
+          <span class="row__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M12.5 6.5 19 12l-6.5 5.5"></path></svg>
+          </span>
+          <span class="row__line" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li class="row reveal">
+        <a class="row__in" href="https://wa.me/79197324262" target="_blank" rel="noopener">
+          <span class="row__no">02</span>
+          <span class="row__name">Клавишные</span>
+          <span class="row__desc">Синтезаторы, цифровые пианино, midi-клавиатуры.</span>
+          <span class="row__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M12.5 6.5 19 12l-6.5 5.5"></path></svg>
+          </span>
+          <span class="row__line" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li class="row reveal">
+        <a class="row__in" href="https://wa.me/79197324262" target="_blank" rel="noopener">
+          <span class="row__no">03</span>
+          <span class="row__name">Барабаны</span>
+          <span class="row__desc">Установки, кахоны, перкуссия, палочки и&nbsp;пластики.</span>
+          <span class="row__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M12.5 6.5 19 12l-6.5 5.5"></path></svg>
+          </span>
+          <span class="row__line" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li class="row reveal">
+        <a class="row__in" href="https://wa.me/79197324262" target="_blank" rel="noopener">
+          <span class="row__no">04</span>
+          <span class="row__name">Звук и&nbsp;свет</span>
+          <span class="row__desc">Микрофоны, стойки, кабели, колонки, световые приборы.</span>
+          <span class="row__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M12.5 6.5 19 12l-6.5 5.5"></path></svg>
+          </span>
+          <span class="row__line" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li class="row reveal">
+        <a class="row__in" href="https://wa.me/79197324262" target="_blank" rel="noopener">
+          <span class="row__no">05</span>
+          <span class="row__name">Мастерская</span>
+          <span class="row__desc">Настройка, замена струн, отстройка грифа, ремонт электроники.</span>
+          <span class="row__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"></path><path d="M12.5 6.5 19 12l-6.5 5.5"></path></svg>
+          </span>
+          <span class="row__line" aria-hidden="true"></span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ===================== ПОЛОСА-ДЕТАЛЬ ===================== -->
+<section class="band" data-band>
+  <div class="band__media">
+    <picture>
+      <source srcset="assets/detail.webp" type="image/webp">
+      <img src="assets/detail.jpg" alt="Панель регуляторов громкости и тона, звукосниматели и струны крупным планом" width="1584" height="660" loading="lazy" data-bandimg>
+    </picture>
+  </div>
+  <div class="band__txt reveal">
+    <p class="label">Мастерская</p>
+    <p class="band__line grad">Инструмент настраивают<br>перед тем, как отдать в&nbsp;руки.</p>
+  </div>
+</section>
+
+<!-- ===================== ПОЧЕМУ МЫ ===================== -->
+<section class="sec sec--why" id="why">
+  <div class="wrap">
+
+    <div class="sec__head reveal">
+      <p class="label">Почему мы</p>
+      <h2 class="h2 grad">Почему идут<br>именно сюда</h2>
+    </div>
+
+    <div class="plates">
+      <article class="plate plate--wide reveal">
+        <p class="plate__big">4,9</p>
+        <p class="plate__txt">Средняя оценка на&nbsp;Яндекс&nbsp;Картах. Тридцать три отзыва, ни&nbsp;одного накрученного.</p>
+        <span class="plate__edge" aria-hidden="true"></span>
+      </article>
+
+      <article class="plate plate--wide reveal">
+        <p class="plate__big">Живой совет</p>
+        <p class="plate__txt">Здесь играют, а&nbsp;не&nbsp;пересказывают описание с&nbsp;коробки. Подберём под&nbsp;руку, задачу и&nbsp;бюджет.</p>
+        <span class="plate__edge" aria-hidden="true"></span>
+      </article>
+
+      <article class="plate reveal">
+        <p class="plate__big">8:00</p>
+        <p class="plate__txt">Открываемся с&nbsp;восьми утра — успеете зайти до&nbsp;работы.</p>
+        <span class="plate__edge" aria-hidden="true"></span>
+      </article>
+
+      <article class="plate reveal">
+        <p class="plate__big">Ремонт</p>
+        <p class="plate__txt">Настройка, замена струн и&nbsp;мелкий ремонт делаются на&nbsp;месте.</p>
+        <span class="plate__edge" aria-hidden="true"></span>
+      </article>
+
+      <article class="plate reveal">
+        <p class="plate__big">Заказ</p>
+        <p class="plate__txt">Чего нет на&nbsp;витрине — привезём. Скажете модель, назовём срок.</p>
+        <span class="plate__edge" aria-hidden="true"></span>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== ОТЗЫВЫ ===================== -->
+<section class="sec sec--reviews" id="reviews">
+  <div class="wrap">
+
+    <div class="sec__head sec__head--split reveal">
+      <div>
+        <p class="label">Отзывы</p>
+        <h2 class="h2 grad">Что говорят<br>покупатели</h2>
+      </div>
+      <a class="rate" href="https://yandex.ru/maps/org/muzykalnyye_instrumenty_maestro/1262751965" target="_blank" rel="noopener">
+        <span class="rate__num">4,9</span>
+        <span class="rate__txt">из&nbsp;пяти / 33&nbsp;отзыва<br>на&nbsp;Яндекс&nbsp;Картах</span>
+        <span class="rate__line" aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="quotes">
+      <blockquote class="quote reveal">
+        <p class="quote__txt">Отличный магазин. Неоднократно закупался тут, доставка быстрая.</p>
+        <footer class="quote__src">Отзыв на&nbsp;Яндекс&nbsp;Картах</footer>
+        <span class="quote__line" aria-hidden="true"></span>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p class="quote__txt">Отличные специалисты. Чётко и&nbsp;быстро нашли то, что нам было нужно.</p>
+        <footer class="quote__src">Отзыв на&nbsp;Яндекс&nbsp;Картах</footer>
+        <span class="quote__line" aria-hidden="true"></span>
+      </blockquote>
+      <blockquote class="quote reveal">
+        <p class="quote__txt">Это нечто, а&nbsp;не&nbsp;магазин. Замечательные музыкальные инструменты.</p>
+        <footer class="quote__src">Отзыв на&nbsp;Яндекс&nbsp;Картах</footer>
+        <span class="quote__line" aria-hidden="true"></span>
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== КОНТАКТЫ ===================== -->
+<section class="sec sec--contact" id="contact">
+  <div class="wrap">
+
+    <div class="contact">
+      <div class="contact__l reveal">
+        <p class="label">Контакты</p>
+        <h2 class="h2 grad">Заходите<br>или напишите</h2>
+        <div class="acts acts--contact">
+          <a class="btn btn--solid" href="https://wa.me/79197324262" target="_blank" rel="noopener" data-magnet>
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span class="btn__label">Подобрать инструмент</span>
+          </a>
+          <a class="btn btn--ghost" href="tel:+79197324262">
+            <span class="btn__fill" aria-hidden="true"></span>
+            <span class="btn__label">Позвонить в&nbsp;магазин</span>
+          </a>
+        </div>
+        <p class="reassure">Ответим лично за&nbsp;15&nbsp;минут</p>
+      </div>
+
+      <ul class="contact__r reveal">
+        <li class="cline">
+          <a class="cline__in" href="https://yandex.ru/maps/org/muzykalnyye_instrumenty_maestro/1262751965" target="_blank" rel="noopener">
+            <span class="cline__k">Адрес</span>
+            <span class="cline__v"><span class="roll"><span class="roll__a">Ленинская,&nbsp;86</span><span class="roll__b" aria-hidden="true">Ленинская,&nbsp;86</span></span></span>
+            <span class="cline__x">Будённовск, первый этаж</span>
+          </a>
+        </li>
+        <li class="cline">
+          <a class="cline__in" href="tel:+79197324262">
+            <span class="cline__k">Телефон</span>
+            <span class="cline__v"><span class="roll"><span class="roll__a">+7 919 732-42-62</span><span class="roll__b" aria-hidden="true">+7 919 732-42-62</span></span></span>
+            <span class="cline__x">Звоните с&nbsp;восьми утра</span>
+          </a>
+        </li>
+        <li class="cline">
+          <a class="cline__in" href="https://wa.me/79197324262" target="_blank" rel="noopener">
+            <span class="cline__k">WhatsApp</span>
+            <span class="cline__v"><span class="roll"><span class="roll__a">Написать сообщение</span><span class="roll__b" aria-hidden="true">Написать сообщение</span></span></span>
+            <span class="cline__x">Пришлите фото — подскажем</span>
+          </a>
+        </li>
+        <li class="cline cline--static">
+          <span class="cline__in">
+            <span class="cline__k">Часы</span>
+            <span class="cline__v">Открываемся в&nbsp;8:00</span>
+            <span class="cline__x">График дня — на&nbsp;Яндекс&nbsp;Картах</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== ФУТЕР ===================== -->
+<footer class="foot">
+  <div class="wrap foot__in">
+    <a class="logo logo--foot" href="#top" aria-label="Маэстро — наверх">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+          <path class="logo__fork" d="M8.5 3.2 V11.4 a3.5 3.5 0 0 0 7 0 V3.2"></path>
+          <path class="logo__stem" d="M12 14.9 V20.8"></path>
+          <path class="logo__wave logo__wave--l" d="M4.6 7.4 a5.4 5.4 0 0 0 0 7.4"></path>
+          <path class="logo__wave logo__wave--r" d="M19.4 7.4 a5.4 5.4 0 0 1 0 7.4"></path>
+        </svg>
+      </span>
+      <span class="logo__word">Маэстро</span>
+    </a>
+    <p class="foot__c">Музыкальный магазин в&nbsp;Будённовске / Ленинская,&nbsp;86</p>
+    <a class="foot__up" href="#top"><span class="roll"><span class="roll__a">Наверх</span><span class="roll__b" aria-hidden="true">Наверх</span></span></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
